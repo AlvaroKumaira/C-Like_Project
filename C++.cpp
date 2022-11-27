@@ -19,10 +19,10 @@ void encoder(){
       point = (point - 'a' + key) % 26 + 'a';
     }
     if (isupper(point)){
-      point = (point - 'a' + key) % 26 + 'A';
+      point = (point - 'A' + key) % 26 + 'A';
     }
     if (isdigit(point)){
-      point = (point - 'a' + key) % 10 + '0';
+      point = (point - '0' + key) % 10 + '0';
     }
 
     message[i]=point;
